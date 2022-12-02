@@ -80,8 +80,10 @@ class Payments {
   constructor(entry) {
     this.entry = entry;
   }
-  add = function () {
-    bobsMembership.collectMonthlyFee.bind(bobsMembership);
+  addBob = function (amountToAdd) {
+    // could add code to validate data, is it a number? is it over or under a certain amount?
+    bobsMembership.collectMonthlyFee.bind(bobsMembership, amountToAdd);
+    //
   };
 }
 
